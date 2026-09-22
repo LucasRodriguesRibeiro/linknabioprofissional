@@ -40,7 +40,7 @@ Você pode simplesmente abrir o arquivo `index.html` em qualquer navegador, ou i
 
 ```bash
 # Executando com Node.js
-node server.js
+node scripts/server.js
 ```
 
 Em seguida, acesse no navegador: `http://localhost:3000`
