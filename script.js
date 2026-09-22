@@ -92,6 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!isValid) return;
 
+    // Dispara eventos de conversão no Meta Pixel
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', {
+        content_name: 'Link na Bio WhatsApp',
+        currency: 'BRL'
+      });
+      fbq('track', 'Contact');
+    }
+
     // Feedback visual no botão
     const originalBtnText = submitBtn.innerHTML;
     submitBtn.innerHTML = `
